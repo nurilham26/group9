@@ -1,3 +1,5 @@
+print('Hello')
+
 #First HTTP Server
 import socket;
 #Define the host as a tuple
