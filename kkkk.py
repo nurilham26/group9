@@ -29,6 +29,7 @@ rh = requests.get(url2, headers=headers)
 print(rh.text)
 
 --------------------------------------------------------------------------------------------------------------------------------
+import json
 import scrapy
 
 class NewSpider(scrapy.Spider):
@@ -52,3 +53,11 @@ class NewSpider(scrapy.Spider):
                                         response.urljoin(next_page),
                                         callback=self.parse
                                  )
+----------------------------------------------------------------------------------------------------------------------------------
+[
+{"image Link": "img/logo.svg"},
+{"image Link": "img/logo.svg"},
+{"image Link": "img/iphone.png"},
+{"image Link": "img/press-01.jpg"},
+{"image Link": "img/press-02.jpg"}
+]
